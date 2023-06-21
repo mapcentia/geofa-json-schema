@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "schemas/t_5800_fac_pkt.tilgaeng_opl.facil_ty_k.1012.json",
+  "$id": "https://geofa.geodanmark.dk/tilgaengelighed/schema",
   "title": "Natur for alle",
   "description": "Toilet (1012)",
   "type": "object",
