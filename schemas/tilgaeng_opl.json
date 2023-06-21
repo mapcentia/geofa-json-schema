@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "schemasi",
+  "$id": "schemas",
   "title": "Natur for alle",
   "description": "...",
   "type": "object",
