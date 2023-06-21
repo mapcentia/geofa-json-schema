@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schemas/1022",
+  "title": "Natur for alle",
+  "description": "Bålplads (1022)",
+  "type": "object",
+  "properties": {
+    "$ref": "tilgaeng_opl.json/#/properties/Bålplads og Bålhytte/properties"
+  },
+  "required": [
+    "Hvilke faciliteter er der for madlavning",
+    "Mulighed for brænde"
+  ]
+}

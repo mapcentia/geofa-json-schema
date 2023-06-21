@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://geofa.geodanmark.dk/t_5802_fac_li.tilgaeng_opl.rute_ty_k.5.json",
+  "title": "Natur for alle",
+  "description": "Vandrerute (5)",
+  "type": "object",
+  "properties": {
+    "$ref": "tilgaeng_opl.json/#/properties/Vandrerute/properties"
+  },
+  "required": [
+    "Er der mange besøgende på ruten",
+    "Er der støj på rutens forløb, fx fra trafik, motorveje, erhverv eller lign",
+    "Hvilke andre brugere benytter ofte ruten",
+    "Er der vedhæftet synstolket rutebeskrivelse",
+    "Er der vedhæftet link til rutebeskrivelse for mennesker med autisme",
+    "Er der kobling til offentlig transport",
+    "Er hele ruten uden trin og trapper(niveaufri)",
+    "Hvilken type potentielle barrierer kan forekomme undervejs",
+    "Hvilken type af belægning er dominerende på rutens forløb",
+    "Hvilke andre typer belægninger er der på ruten",
+    "Er belægningen fast",
+    "Er belægningen jævn",
+    "Angiv den generelle passagebredde på størstedelen af ruten",
+    "Hvor smal er den smalleste passagebredde på turen",
+    "Skal man på ruten gennem hegnede områder hvor der er løsgående dyr",
+    "Kan man låne et hjælpemiddel ved ruten"
+  ]
+}

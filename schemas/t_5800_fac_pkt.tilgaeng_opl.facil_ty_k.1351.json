@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schemas/1351",
+  "title": "Natur for alle",
+  "description": "Parkeringsplads (1351)",
+  "type": "object",
+  "properties": {
+    "$ref": "tilgaeng_opl.json/#/properties/Holdeplads og kategorien Parkeringsplads/properties"
+  },
+  "required": [
+    "Skriv adresse på parkeringspladsen, eller nærmeste adresse",
+    "Hvor mange biler kan holde på p-pladsen",
+    "Er der særskilte p-pladser til biler med handicapparkeringstilladelse",
+    "Er belægningen fast",
+    "Er belægningen jævn"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schemas/4411",
+  "title": "Natur for alle",
+  "description": "Fiskeplatform (4411)",
+  "type": "object",
+  "properties": {
+    "$ref": "tilgaeng_opl.json/#/properties/Fiskeplatform/properties"
+  },
+  "required": [
+    "Er der adgang til platformen uden trin og trapper (niveaufri)"
+  ]
+}

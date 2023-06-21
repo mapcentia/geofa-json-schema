@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schemas/1201",
+  "title": "Natur for alle",
+  "description": "Borde-bænke/picnic (1201)",
+  "type": "object",
+  "properties": {
+    "$ref": "tilgaeng_opl.json/#/properties/Borde-bænke~1picnic og kategorien Tørvejrsrum~1Madpakkehus/properties"
+  },
+  "required": [
+  ]
+}

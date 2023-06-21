@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schemas/1012",
+  "title": "Natur for alle",
+  "description": "Toilet (1012)",
+  "type": "object",
+  "properties": {
+    "$ref": "tilgaeng_opl.json/#/properties/Toilet/properties"
+  },
+  "required": [
+    "Er der er handicaptoilet"
+  ]
+}
