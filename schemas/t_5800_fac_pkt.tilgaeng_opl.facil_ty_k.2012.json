@@ -4,9 +4,7 @@
   "title": "Natur for alle",
   "description": "Fugletårn/Udsigtstårn (2012)",
   "type": "object",
-  "properties": {
-    "$ref": "tilgaeng_opl.json/#/properties/Fugletårn~1Udsigtstårn/properties"
-  },
+  "$ref": "tilgaeng_opl.json#/$defs/Fugletårn~1Udsigtstårn/properties",
   "required": [
     "Er der adgang til faciliteten uden trin og trapper (niveaufri)"
   ]

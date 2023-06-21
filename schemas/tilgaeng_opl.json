@@ -3,8 +3,7 @@
   "$id": "schemas",
   "title": "Natur for alle",
   "description": "...",
-  "type": "object",
-  "properties": {
+  "$defs": {
     "Holdeplads og kategorien Parkeringsplads": {
       "type": "object",
       "properties": {

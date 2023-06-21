@@ -4,9 +4,7 @@
   "title": "Natur for alle",
   "description": "Bålhytte (3091)",
   "type": "object",
-  "properties": {
-    "$ref": "tilgaeng_opl.json/#/properties/Bålplads og Bålhytte/properties"
-  },
+  "$ref": "tilgaeng_opl.json#/$defs/Bålplads og Bålhytte/properties",
   "required": [
     "Hvilke faciliteter er der for madlavning",
     "Mulighed for brænde"

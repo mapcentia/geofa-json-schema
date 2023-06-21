@@ -4,9 +4,7 @@
   "title": "Natur for alle",
   "description": "Shelter (3012)",
   "type": "object",
-  "properties": {
-    "$ref": "tilgaeng_opl.json/#/properties/Shelter/properties"
-  },
+  "$ref": "tilgaeng_opl.json#/$defs/Shelter/properties",
   "required": [
     "Er der et minimum friareal areal foran shelteren på min. 150 x 150 cm",
     "Angiv højden på shelter -gulvet over jorden",

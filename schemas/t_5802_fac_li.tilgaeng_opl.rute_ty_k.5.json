@@ -4,9 +4,7 @@
   "title": "Natur for alle",
   "description": "Vandrerute (5)",
   "type": "object",
-  "properties": {
-    "$ref": "tilgaeng_opl.json/#/properties/Vandrerute/properties"
-  },
+  "$ref": "tilgaeng_opl.json#/$defs/Vandrerute/properties",
   "required": [
     "Er der mange besøgende på ruten",
     "Er der støj på rutens forløb, fx fra trafik, motorveje, erhverv eller lign",

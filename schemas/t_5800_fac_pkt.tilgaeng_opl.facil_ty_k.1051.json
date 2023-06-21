@@ -4,9 +4,7 @@
   "title": "Natur for alle",
   "description": "Badestrand/sted (1051)",
   "type": "object",
-  "properties": {
-    "$ref": "tilgaeng_opl.json/#/properties/Badestrand~1sted og kategorien Badebro/properties"
-  },
+  "$ref": "tilgaeng_opl.json#/$defs/Badestrand~1sted og kategorien Badebro/properties",
   "required": [
     "Er der adgang til vand uden trin og trapper (niveaufri)",
     "Hvordan er adgangen til vandet"

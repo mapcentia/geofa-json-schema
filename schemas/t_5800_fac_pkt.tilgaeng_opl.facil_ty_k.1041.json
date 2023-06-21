@@ -4,9 +4,7 @@
   "title": "Natur for alle",
   "description": "Naturlegepladser (1041)",
   "type": "object",
-  "properties": {
-    "$ref": "tilgaeng_opl.json/#/properties/Naturlegepladser/properties"
-  },
+  "$ref": "tilgaeng_opl.json#/$defs/Naturlegepladser/properties",
   "required": [
     "Er hele eller dele af legepladsen hegnet ind"
   ]
