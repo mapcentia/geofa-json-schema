@@ -80,7 +80,7 @@
     "Badestrand/sted og kategorien Badebro": {
       "type": "object",
       "properties": {
-        "Er der adgang til vand uden trin og trapper(niveaufri)": {
+        "Er der adgang til vand uden trin og trapper (niveaufri)": {
           "type": "boolean",
           "description": "Hvis der i adgangen ned i vandet er trin, kanter og trapper eller lignende, svares der ’nej’."
         },
