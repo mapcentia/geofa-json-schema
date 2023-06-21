@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://geofa.geodanmark.dk/tilgaengelighed/schema/",
   "title": "Natur for alle",
-  "description": "Borde-bænke/picnic (1201)",
+  "description": "Tørvejrsrum/Madpakkehus (1132)",
   "type": "object",
   "$ref": "tilgaeng_opl.json#/$defs/Borde-bænke~1picnic og kategorien Tørvejrsrum~1Madpakkehus",
   "required": [
