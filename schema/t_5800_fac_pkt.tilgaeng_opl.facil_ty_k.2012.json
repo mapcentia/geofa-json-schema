@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://geofa.geodanmark.dk/t_5800_fac_pkt.tilgaeng_opl.facil_ty_k.2012.json",
+  "$id": "https://geofa.geodanmark.dk/tilgaengelighed/schema/",
   "title": "Natur for alle",
   "description": "Fugletårn/Udsigtstårn (2012)",
   "type": "object",
-  "$ref": "tilgaeng_opl.json#/$defs/Fugletårn~1Udsigtstårn/properties",
+  "$ref": "tilgaeng_opl.json#/$defs/Fugletårn~1Udsigtstårn",
   "required": [
     "Er der adgang til faciliteten uden trin og trapper (niveaufri)"
   ]

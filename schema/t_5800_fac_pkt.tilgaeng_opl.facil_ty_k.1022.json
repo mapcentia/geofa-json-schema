@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "schemas/1022",
+  "$id": "https://geofa.geodanmark.dk/tilgaengelighed/schema/",
   "title": "Natur for alle",
   "description": "Bålplads (1022)",
   "type": "object",
-  "$ref": "tilgaeng_opl.json#/$defs/Bålplads og Bålhytte/properties",
+  "$ref": "tilgaeng_opl.json#/$defs/Bålplads og Bålhytte",
   "required": [
     "Hvilke faciliteter er der for madlavning",
     "Mulighed for brænde"

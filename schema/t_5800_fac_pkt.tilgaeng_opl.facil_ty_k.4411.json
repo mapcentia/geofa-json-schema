@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "schemas/4411",
+  "$id": "https://geofa.geodanmark.dk/tilgaengelighed/schema/",
   "title": "Natur for alle",
   "description": "Fiskeplatform (4411)",
   "type": "object",
-  "$ref": "tilgaeng_opl.json#/$defs/Fiskeplatform/properties",
+  "$ref": "tilgaeng_opl.json#/$defs/Fiskeplatform",
   "required": [
     "Er der adgang til platformen uden trin og trapper (niveaufri)"
   ]

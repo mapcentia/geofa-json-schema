@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "schemas/1051",
+  "$id": "https://geofa.geodanmark.dk/tilgaengelighed/schema/",
   "title": "Natur for alle",
   "description": "Badestrand/sted (1051)",
   "type": "object",
-  "$ref": "tilgaeng_opl.json#/$defs/Badestrand~1sted og kategorien Badebro/properties",
+  "$ref": "tilgaeng_opl.json#/$defs/Badestrand~1sted og kategorien Badebro",
   "required": [
     "Er der adgang til vand uden trin og trapper (niveaufri)",
     "Hvordan er adgangen til vandet"

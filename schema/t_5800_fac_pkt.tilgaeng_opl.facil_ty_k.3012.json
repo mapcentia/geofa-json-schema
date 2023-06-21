@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "schemas/3012",
+  "$id": "https://geofa.geodanmark.dk/tilgaengelighed/schema/",
   "title": "Natur for alle",
   "description": "Shelter (3012)",
   "type": "object",
-  "$ref": "tilgaeng_opl.json#/$defs/Shelter/properties",
+  "$ref": "tilgaeng_opl.json#/$defs/Shelter",
   "required": [
     "Er der et minimum friareal areal foran shelteren på min. 150 x 150 cm",
     "Angiv højden på shelter -gulvet over jorden",

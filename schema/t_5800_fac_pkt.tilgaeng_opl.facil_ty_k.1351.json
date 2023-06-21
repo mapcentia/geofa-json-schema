@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "schemas/1351",
+  "$id": "https://geofa.geodanmark.dk/tilgaengelighed/schema/",
   "title": "Natur for alle",
   "description": "Parkeringsplads (1351)",
   "type": "object",
-  "$ref": "tilgaeng_opl.json#/$defs/Holdeplads og kategorien Parkeringsplads/properties",
+  "$ref": "tilgaeng_opl.json#/$defs/Holdeplads og kategorien Parkeringsplads",
   "required": [
     "Skriv adresse på parkeringspladsen, eller nærmeste adresse",
     "Hvor mange biler kan holde på p-pladsen",

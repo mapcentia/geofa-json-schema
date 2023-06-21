@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "schemas/1041",
+  "$id": "https://geofa.geodanmark.dk/tilgaengelighed/schema/",
   "title": "Natur for alle",
   "description": "Naturlegepladser (1041)",
   "type": "object",
-  "$ref": "tilgaeng_opl.json#/$defs/Naturlegepladser/properties",
+  "$ref": "tilgaeng_opl.json#/$defs/Naturlegepladser",
   "required": [
     "Er hele eller dele af legepladsen hegnet ind"
   ]

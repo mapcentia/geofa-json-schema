@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://geofa.geodanmark.dk/tilgaengelighed/schema",
+  "$id": "https://geofa.geodanmark.dk/tilgaengelighed/schema/",
   "title": "Natur for alle",
   "description": "Toilet (1012)",
   "type": "object",
-  "$ref": "tilgaeng_opl.json#/$defs/Toilet/properties",
+  "$ref": "tilgaeng_opl.json#/$defs/Toilet",
   "required": [
     "Er der er handicaptoilet"
   ]
