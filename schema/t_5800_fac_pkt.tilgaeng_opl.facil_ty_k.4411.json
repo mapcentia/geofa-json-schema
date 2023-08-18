@@ -6,6 +6,6 @@
   "type": "object",
   "$ref": "tilgaeng_opl.json#/$defs/Fiskeplatform",
   "required": [
-    "Er der adgang til platformen uden trin og trapper (niveaufri)"
+    "er_adgang_uden_trin_trapper"
   ]
 }

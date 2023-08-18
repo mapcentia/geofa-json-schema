@@ -6,6 +6,6 @@
   "type": "object",
   "$ref": "tilgaeng_opl.json#/$defs/Fugletårn~1Udsigtstårn",
   "required": [
-    "Er der adgang til faciliteten uden trin og trapper (niveaufri)"
+    "er_adgang_uden_trin_trapper"
   ]
 }

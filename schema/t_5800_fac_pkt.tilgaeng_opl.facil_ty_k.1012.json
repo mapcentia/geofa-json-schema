@@ -6,6 +6,6 @@
   "type": "object",
   "$ref": "tilgaeng_opl.json#/$defs/Toilet",
   "required": [
-    "Er der er handicaptoilet"
+    "er_handicaptoilet"
   ]
 }

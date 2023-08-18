@@ -6,10 +6,10 @@
   "type": "object",
   "$ref": "tilgaeng_opl.json#/$defs/Shelter",
   "required": [
-    "Er der et minimum friareal areal foran shelteren på min. 150 x 150 cm",
-    "Angiv højden på shelter -gulvet over jorden",
-    "Angiv højden inde i shelteren (den maksimale højde)",
-    "Er der lift eller skinnesystem i shelteren",
-    "Er der udtræksgulv i shelteren"
+    "er_minimum_aabent_areal",
+    "la_shelter_gulv hoejde over jord",
+    "hoejde_inde_i_shelteren",
+    "er_liftskinne",
+    "er_udtraekbart_gulv"
   ]
 }

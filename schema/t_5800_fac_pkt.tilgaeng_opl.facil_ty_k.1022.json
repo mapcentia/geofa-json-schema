@@ -6,7 +6,7 @@
   "type": "object",
   "$ref": "tilgaeng_opl.json#/$defs/Bålplads og Bålhytte",
   "required": [
-    "Hvilke faciliteter er der for madlavning",
-    "Mulighed for brænde"
+    "madlavningsfaciliteter_typer",
+    "mulighed_braende"
   ]
 }

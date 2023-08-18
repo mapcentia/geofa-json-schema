@@ -6,6 +6,6 @@
   "type": "object",
   "$ref": "tilgaeng_opl.json#/$defs/Naturlegepladser",
   "required": [
-    "Er hele eller dele af legepladsen hegnet ind"
+    "er_legeplads_indhegnet"
   ]
 }

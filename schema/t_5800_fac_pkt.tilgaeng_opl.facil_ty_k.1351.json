@@ -6,10 +6,10 @@
   "type": "object",
   "$ref": "tilgaeng_opl.json#/$defs/Holdeplads og kategorien Parkeringsplads",
   "required": [
-    "Skriv adresse på parkeringspladsen, eller nærmeste adresse",
-    "Hvor mange biler kan holde på p-pladsen",
-    "Er der særskilte p-pladser til biler med handicapparkeringstilladelse",
-    "Er belægningen fast",
-    "Er belægningen jævn"
+    "parkeringsplads_adresse",
+    "parkeringskapacitet",
+    "er_handicapparkering_tilladt",
+    "er_belaegningen_solid",
+    "er_belaegningen_jaevn"
   ]
 }
