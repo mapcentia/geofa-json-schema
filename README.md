@@ -41,7 +41,7 @@ ALt efter hvilken type faciliteten har, skal der anvendes et specifikt schema:
 > definitioner findes.
 > Denne metode er valgt, da flere schemaer refererer til samme definition.
 
-## Valoadering af objekter
+## Validering af objekter
 
 Inden man indsætter et objekt i GeoFA databasen kan du validere det. Der findes mange forskellige måder at gøre det på.
 Det kan fx gøre online på [https://www.jsonschemavalidator.net/](https://www.jsonschemavalidator.net/). Prøv med dette
