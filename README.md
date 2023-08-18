@@ -58,8 +58,8 @@ schema og objekt:
   "type": "object",
   "$ref": "tilgaeng_opl.json#/$defs/Badestrand~1sted og kategorien Badebro",
   "required": [
-    "Er der adgang til vand uden trin og trapper (niveaufri)",
-    "Hvordan er adgangen til vandet"
+    "er_adgang_uden_trin_trapper",
+    "adgang_til_vand_typer"
   ]
 }
 ```
@@ -68,8 +68,8 @@ schema og objekt:
 
 ```json
 {
-  "Er der adgang til vand uden trin og trapper (niveaufri)": true,
-  "Hvordan er adgangen til vandet": [
+  "er_adgang_uden_trin_trapper": true,
+  "adgang_til_vand_typer": [
     "Lift",
     "Trappe uden gelænder"
   ]
