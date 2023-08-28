@@ -2,12 +2,10 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://geofa.geodanmark.dk/tilgaengelighed/schema/",
   "title": "Natur for alle",
-  "description": "Bålhytte (3091)",
+  "description": "Bænk (1371)",
   "type": "object",
-  "$ref": "tilgaeng_opl.json#/$defs/Bålhytte",
+  "$ref": "tilgaeng_opl.json#/$defs/Bænke",
   "required": [
-    "madlavningsfaciliteter_typer",
-    "mulighed_braende",
-    "baalhytten_beskrivelse"
+    "bordbaenke_facilitets_beskrivelse"
   ]
 }

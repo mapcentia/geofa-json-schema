@@ -6,6 +6,7 @@
   "type": "object",
   "$ref": "tilgaeng_opl.json#/$defs/Fiskeplatform",
   "required": [
-    "er_adgang_uden_trin_trapper"
+    "er_adgang_uden_trin_trapper",
+    "fiskeplatform_beskrivelse"
   ]
 }

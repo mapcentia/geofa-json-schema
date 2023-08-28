@@ -4,9 +4,10 @@
   "title": "Natur for alle",
   "description": "Badestrand/sted (1051)",
   "type": "object",
-  "$ref": "tilgaeng_opl.json#/$defs/Badestrand~1sted og kategorien Badebro",
+  "$ref": "tilgaeng_opl.json#/$defs/Badestrand~1sted",
   "required": [
     "er_adgang_uden_trin_trapper",
-    "adgang_til_vand_typer"
+    "adgang_til_vand_typer",
+    "forhold_omkring_strand_beskrivelse"
   ]
 }

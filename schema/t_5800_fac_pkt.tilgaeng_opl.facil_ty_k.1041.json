@@ -6,6 +6,7 @@
   "type": "object",
   "$ref": "tilgaeng_opl.json#/$defs/Naturlegepladser",
   "required": [
-    "er_legeplads_indhegnet"
+    "er_legeplads_indhegnet",
+    "Legeplads_tilgaengelighed_beskrivelse"
   ]
 }

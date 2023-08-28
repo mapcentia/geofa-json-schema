@@ -4,12 +4,13 @@
   "title": "Natur for alle",
   "description": "Holdeplads (1291)",
   "type": "object",
-  "$ref": "tilgaeng_opl.json#/$defs/Holdeplads og kategorien Parkeringsplads",
+  "$ref": "tilgaeng_opl.json#/$defs/Holdeplads",
   "required": [
-    "parkeringsplads_adresse",
+    "holdeplads_adresse",
     "parkeringskapacitet",
-    "er_handicapparkering_tilladt",
-    "er_belaegningen_solid",
-    "er_belaegningen_jaevn"
+    "er_saerskilte_handicapparkering",
+    "er_belaegningen_fast",
+    "er_belaegningen_jaevn",
+    "parkeringsforhold_beskrivelse"
   ]
 }

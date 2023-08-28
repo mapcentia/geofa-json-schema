@@ -4,7 +4,8 @@
   "title": "Natur for alle",
   "description": "Tørvejrsrum/Madpakkehus (1132)",
   "type": "object",
-  "$ref": "tilgaeng_opl.json#/$defs/Borde-bænke~1picnic og kategorien Tørvejrsrum~1Madpakkehus",
+  "$ref": "tilgaeng_opl.json#/$defs/Tørvejrsrum~1Madpakkehus",
   "required": [
+    "madpakkehus_tilgaengelighed_beskrivelse"
   ]
 }

@@ -4,25 +4,46 @@
   "title": "Natur for alle",
   "description": "...",
   "$defs": {
-    "Holdeplads og kategorien Parkeringsplads": {
+    "Holdeplads": {
+      "type": "object",
+      "properties": {
+        "holdeplads_adresse": {
+          "type": "string",
+          "title": "Skriv adresse på parkeringspladsen, eller nærmeste adresse.",
+          "description": "Har punktet ikke en adresse i forvejen, kan kommunernes BBR-ansvarlige i byggesagsafdelingen oprette en."
+        },
+        "parkeringskapacitet": {
+          "type": "number",
+          "title": "Hvor mange biler kan der være på holdepladsen?",
+          "description": "Angiv hvor mange personbiler der cirka kan holde på pladsen, eller antal markerede p-båse."
+        },
+        "er_saerskilte_handicapparkering": {
+          "type": "boolean",
+          "title": "Er der særskilte p-pladser til biler med handicapparkeringstilladelse?",
+          "description": "Pladserne kan være angivet med handicapskilt eller markeret med handicapsymbol i belægningen."
+        },
+        "er_belaegningen_fast": {
+          "type": "boolean",
+          "title": "Er belægningen fast?",
+          "description": "Faste belægninger er overflader der er hårde, og ikke giver efter ved færdsel med hjul eller gang. Fx: stampet stabilgrus, slotsgrus, asfalt, betonsten, hårde jordstier mv. Løse belægninger er der hvor overfladen er blød så man synker ned i overfladen eller hvor små hjul kan have svært ved at komme frem: Sand, løs flis, perlesten, blødt græs mv."
+        },
+        "er_belaegningen_jaevn": {
+          "type": "boolean",
+          "title": "Er belægningen jævn?",
+          "description": "Jævne belægninger er flade, ensartede, uden huller, væsentlige rødder og større sten der skaber bump på vejen."
+        },
+        "parkeringsforhold_beskrivelse": {
+          "type": "string",
+          "title": "Beskrivelse af parkeringsforholdene.",
+          "description": "Angiv gerne antallet af handicapparkeringspladser, angiv hvis der er betalingsparkering, hvis der store huller eller ofte mudret mv."
+        }
+      }
+    },
+    "Parkeringsplads": {
       "type": "object",
       "properties": {
         "parkeringsplads_adresse": {
-          "type": "object",
-          "properties": {
-            "vejnavn": {
-              "type": "string"
-            },
-            "vejnummer": {
-              "type": "number"
-            },
-            "postnummer": {
-              "type": "number"
-            },
-            "by": {
-              "type": "string"
-            }
-          },
+          "type": "string",
           "title": "Skriv adresse på parkeringspladsen, eller nærmeste adresse.",
           "description": "Har punktet ikke en adresse i forvejen, kan kommunernes BBR-ansvarlige i byggesagsafdelingen oprette en."
         },
@@ -31,12 +52,12 @@
           "title": "Hvor mange biler kan holde på p-pladsen?",
           "description": "Angiv hvor mange personbiler der cirka kan holde på pladsen, eller antal markerede p-båse."
         },
-        "er_handicapparkering_tilladt": {
+        "er_saerskilte_handicapparkering": {
           "type": "boolean",
           "title": "Er der særskilte p-pladser til biler med handicapparkeringstilladelse?",
           "description": "Pladserne kan være angivet med handicapskilt eller markeret med handicapsymbol i belægningen."
         },
-        "er_belaegningen_solid": {
+        "er_belaegningen_fast": {
           "type": "boolean",
           "title": "Er belægningen fast?",
           "description": "Faste belægninger er overflader der er hårde, og ikke giver efter ved færdsel med hjul eller gang. Fx: stampet stabilgrus, slotsgrus, asfalt, betonsten, hårde jordstier mv. Løse belægninger er der hvor overfladen er blød så man synker ned i overfladen eller hvor små hjul kan have svært ved at komme frem: Sand, løs flis, perlesten, blødt græs mv."
@@ -63,9 +84,34 @@
         }
       }
     },
-    "Borde-bænke/picnic og kategorien Tørvejrsrum/Madpakkehus": {
+    "Bænke": {
       "type": "object",
       "properties": {
+        "bordbaenke_facilitets_beskrivelse": {
+          "type": "string",
+          "title": "Beskrivelse af tilgængeligheden ved bænken",
+          "description": "Du kan her beskrive fx hvor sidemulighederne er placeret i forhold til ruten (lige ved ruten, x meter fra ruten) og hvis faciliteten ligger lidt væk fra hovedruten er det godt at nævne hvilken belægning der er på stien hen til faciliteten."
+        }
+      }
+    },
+    "Borde-bænke/picnic": {
+      "type": "object",
+      "properties": {
+        "bordbaenke_facilitets_beskrivelse": {
+          "type": "string",
+          "title": "Beskrivelse af tilgængeligheden ved borde-bænke/picnic faciliteten",
+          "description": "Du kan her beskrive fx hvor sidemulighederne er placeret i forhold til ruten (lige ved ruten, x meter fra ruten) og hvis faciliteten ligger lidt væk fra hovedruten er det godt at nævne hvilken belægning der er på stien hen til faciliteten."
+        }
+      }
+    },
+    "Tørvejrsrum/Madpakkehus": {
+      "type": "object",
+      "properties": {
+        "madpakkehus_tilgaengelighed_beskrivelse": {
+          "type": "string",
+          "title": "Beskrivelsen af tilgængeligheden til madpakkehus/tørvejrsrum",
+          "description": "Du kan her beskrive fx hvor sidemulighederne er placeret i forhold til ruten (lige ved ruten, x meter fra ruten) og hvis faciliteten ligger lidt væk fra hovedruten er det godt at nævne hvilken belægning der er på stien hen til faciliteten."
+        }
       }
     },
     "Toilet": {
@@ -83,10 +129,15 @@
           "type": "boolean",
           "title": "Er der er handicaptoilet?",
           "description": "Hvis der er et toilet skiltet med handicapsymbol skal du svare ja. Foreningen Godadgang kan hjælpe med at svare på om toilettet lever op til kravene for et handicaptoilet."
+        },
+        "toiletforhold_beskrivelse": {
+          "type": "string",
+          "title": "Beskrivelse af toiletforholdene",
+          "description": "Du skal skrive her hvornår toilettet er åbent på året, om der er rindende vand i bygningen eller hvor den nærmeste vandhane er, hvis der er lift, leje til voksen, armstøtter, pusleplads, brusemulighed eller om man skal medbringe toiletpapir o.l."
         }
       }
     },
-    "Badestrand/sted og kategorien Badebro": {
+    "Badestrand/sted": {
       "type": "object",
       "properties": {
         "er_adgang_uden_trin_trapper": {
@@ -109,6 +160,42 @@
           "uniqueItems": true,
           "title": "Hvordan er adgangen til vandet?",
           "description": "Vælg en eller flere muligheder. Husk at vedhæfte billeder af hvordan man kan komme ned/ud i vandet."
+        },
+        "forhold_omkring_strand_beskrivelse": {
+          "type": "string",
+          "title": "Beskrivelse af forholdene omkring badestranden/stedet",
+          "description": "Beskriv om eventuelle gangbroer, badebroer eller køreunderlag tages op om vinteren, om der er omklædningsmuligheder, bruser, eller lån af hjælpemidler og hvordan man låner dem."
+        }
+      }
+    },
+    "Badebro": {
+      "type": "object",
+      "properties": {
+        "er_adgang_uden_trin_trapper": {
+          "type": "boolean",
+          "title": "Er der adgang til vand uden trin og trapper (niveaufri)?",
+          "description": "Hvis der i adgangen ned i vandet er trin, kanter og trapper eller lignende, svares der ’nej’."
+        },
+        "adgang_til_vand_typer": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "Trappe uden gelænder",
+              "Trappe med gelænder",
+              "Rampe/bro",
+              "Lift",
+              "Direkte fra strandkanten/vandbredden"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "title": "Hvordan er adgangen til vandet?",
+          "description": "Vælg en eller flere muligheder. Husk at vedhæfte billeder af hvordan man kan komme ned/ud i vandet."
+        },
+        "forhold_omkring_badebro_beskrivelse": {
+          "type": "string",
+          "title": "Beskrivelse af forholdene omkring badebroen",
+          "description": "Beskriv om eventuelle gangbroer, badebroer eller køreunderlag tages op om vinteren, om der er omklædningsmuligheder, bruser, eller lån af hjælpemidler og hvordan man låner dem."
         }
       }
     },
@@ -119,6 +206,11 @@
           "type": "boolean",
           "title": "Er hele eller dele af legepladsen hegnet ind?",
           "description": "Svar ja hvis hele eller dele af området er hegnet, eller på anden måde aflukket."
+        },
+        "Legeplads_tilgaengelighed_beskrivelse": {
+          "type": "string",
+          "title": "Beskrivelse af tilgængeligheden på legepladsen",
+          "description": ""
         }
       }
     },
@@ -141,6 +233,11 @@
           "exclusiveMinimum": 0,
           "title": "Hvor langt er der fra platformens gulvniveau til vandets overflade?",
           "description": "Måles i cm. Bruges til at vurdere hvilket udstyr man skal bruge til at kunne få fisken op af vandet, fra fx en kørestol."
+        },
+        "fiskeplatform_beskrivelse": {
+          "type": "string",
+          "title": "Beskrivelse af fiskeplatformen",
+          "description": "Beskriv gerne om vandstanden er meget svingende på stedet, hvilke fisk man kan fange, om der er en holder til stænger, borde til at sætte udstyr af på, faciliteter til at rense fisk mv."
         }
       }
     },
@@ -161,7 +258,7 @@
         "hoejde_inde_i_shelteren": {
           "type": "number",
           "exclusiveMinimum": 0,
-          "title": "Angiv højden inde i shelteren (den maksimale højde)?",
+          "title": "Angiv højden af åbningen ind i shelteren",
           "description": "Loftshøjden måles som passagehøjden ved indgangen til shelteren fra bund til spær/dørkarm. Der kan godt være endnu højere inde i selve shelteren, men det er højden i indgangen/åbningen som angives her."
         },
         "er_liftskinne": {
@@ -174,14 +271,14 @@
           "title": "Er der udtræksgulv i shelteren?",
           "description": "Et udtræksgulv er en plade i sheltergulvet som kan trækkes ud, og som gør det nemmere at komme fra fx en kørestol og ind i shelteren. "
         },
-        "Shelter_tilgaengelighed_beskrivelse": {
+        "shelter_tilgaengelighed_beskrivelse": {
           "type": "string",
           "title": "Beskrivelse af tilgængeligheden ved shelteret",
-          "description": ""
+          "description": "Beskriv om shelteren skal bookes, om det koster noget, og om der er særlige regler for brug af shelteren, om den kan lukkes med låge, myggenet eller halvdør, om der er særlig udstyr til shelteren og hvor dette kan hentes."
         }
       }
     },
-    "Bålplads og Bålhytte": {
+    "Bålplads": {
       "type": "object",
       "properties": {
         "madlavningsfaciliteter_typer": {
@@ -212,6 +309,50 @@
           "uniqueItems": true,
           "title": "Mulighed for brænde?",
           "description": "Vælg en eller flere kategorier."
+        },
+        "baalpladsen_beskrivelse": {
+          "type": "string",
+          "title": "Beskrivelse af bålpladsen",
+          "description": "Beskriv faciliteten i forhold til om der er siddemuligheder og beskriv gerne belægningen rundt om/inden i faciliteten."
+        }
+      }
+    },
+    "Bålhytte": {
+      "type": "object",
+      "properties": {
+        "madlavningsfaciliteter_typer": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "Grill",
+              "Bål",
+              "Udekøkken med rindende vand",
+              "Udekøkken uden rindende vand"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "title": "Hvilke faciliteter er der for madlavning?",
+          "description": "En selvstændig vandhane oprettes som sit eget punkt."
+        },
+        "mulighed_braende": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "Man skal selv have brænde med",
+              "Der lægges brænde ud på stedet",
+              "Der må hentes nedfaldne grene i skovbunden"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "title": "Mulighed for brænde?",
+          "description": "Vælg en eller flere kategorier."
+        },
+        "baalhytten_beskrivelse": {
+          "type": "string",
+          "title": "Beskrivelse af bålpladsen",
+          "description": "Beskriv faciliteten i forhold til om der er siddemuligheder og beskriv gerne belægningen rundt om/inden i faciliteten."
         }
       }
     },
@@ -233,6 +374,11 @@
           "exclusiveMinimum": 0,
           "title": "Hvad er laveste udkigshøjde fra fugletårnet?",
           "description": "Mål fra gulvniveau til den laveste højde hvor man kan se ud, fx over et rækværk. Hvis der er fuldt udsyn fra gulv og op, så springes spørgsmålet over, men det angives i beskrivelsesfeltet at der er fuldt udsyn fra gulvniveau."
+        },
+        "fugletaarnet_udsigtstaarnet_beskrivelse": {
+          "type": "string",
+          "title": "Beskrivelse af fugletårnet/udsigtstårnet",
+          "description": "Beskriv om der er dele af fugletårnet hvor der ikke er niveaufri adgang, hvis der er frit udsyn fra gulvniveau og op, om der er særlige funktioner med udkigslåger eller formidling i fugletårnet. Beskriv også om der er siddemuligheder i faciliteten."
         }
       }
     },
@@ -241,15 +387,15 @@
       "properties": {
         "belastning_typer": {
           "enum": [
-            "Lavt publikumstryk i hverdage",
-            "Lavt publikumstryk i weekender"
+            "Lavt besøgsniveau i hverdage",
+            "Lavt besøgsniveau i weekender"
           ],
-          "title": "Hvordan er publikumstrykket på ruten?",
-          "description": "Lavt publikumstryk er der hvor man møder få andre brugere og hvor man har mulighed for at finde ro og fred. Svaret kan vurderes ud fra opsatte tællere eller ud fra en lokal vurdering."
+          "title": "Hvordan er besøgsniveauet på ruten?",
+          "description": "Lavt besøgsniveau er der hvor man møder få andre brugere og hvor man har mulighed for at finde ro og fred. Svaret kan vurderes ud fra opsatte tællere eller ud fra en lokal vurdering."
         },
         "belastning_tekst": {
           "type": "string",
-          "title": "Yderligere oplysninger om publikumstrykket.",
+          "title": "Yderligere oplysninger om besøgsniveauet",
           "description": "Beskriv hvis der er faste begivenheder med højt publikumstryk, enten i kraft af faste brugergrupper på bestemte tidspunkter eller større arrangementer på bestemte årstider."
         },
         "er_trafikstoej": {
@@ -267,12 +413,28 @@
           "title": "Er der vedhæftet synstolket rutebeskrivelse?",
           "description": "Hvis der er oprettet en beskrivelse for blinde og svagsynede fx i samarbejde med Dansk Blindesamfund, kan der her indsættes et link til beskrivelsen hos Dansk Blindesamfunds hjemmeside. Er der ikke udarbejdet en særlig beskrivelse til denne målgruppe, springes dette felt bare over."
         },
+        "link_visuelt": {
+          "type": "string",
+          "title": "Indsæt webadresse",
+          "description": ""
+        },
         "er_linkbeskrivelse_autisme": {
           "type": "boolean",
           "title": "Er der vedhæftet link til rutebeskrivelse for mennesker med autisme?",
           "description": "Hvis der er oprettet en beskrivelse for personer med autisme, fx i samarbejde med AutismGoTo, kan der her indsættes et link til beskrivelsen på www.autismgoto.com. Er der ikke udarbejdet en særlig beskrivelse til denne målgruppe, springes dette felt bare over."
         },
+        "link_beskrivelse_autisme": {
+          "type": "string",
+          "title": "Indsæt webadresse",
+          "description": ""
+        },
         "er_forbindelse_offentlig_transport": {
+          "type": "boolean",
+          "title": "Er der kobling til offentlig transport?",
+          "description": ""
+
+        },
+        "offentlig_transport_typer": {
           "type": "array",
           "items": {
             "enum": [
@@ -286,7 +448,7 @@
           },
           "minItems": 1,
           "uniqueItems": true,
-          "title": "Er der kobling til offentlig transport?",
+          "title": "Bus Metro Færge Tog Letbane",
           "description": "En kobling defineres her som de tilfælde hvor der under 1 km. fra ankomst-parkeringspladsen/ruten er et busstoppested, togstation, metro eller lign."
         },
         "offentlig_transport_beskrivelse": {
@@ -317,62 +479,61 @@
           "uniqueItems": true,
           "title": "Hvilken type potentielle barrierer kan forekomme undervejs?",
           "description": "Hvis der ikke er nogle af delene på ruten, så springes dette spørgsmål over. Notér gerne i beskrivelsen af området, hvor de potentielle barrierer er på ruten. Det er godt at vedhæfte nogle billeder hvorpå man kan se nogle af den potentielle barrierer, så den enkelte selv kan vurdere om de udgør et problem for dem."
+        },
+        "dominerende_belaegnings_typer": {
+          "type": "string",
+          "title": "Hvilken type af belægning er dominerende på rutens forløb?",
+          "description": "Nævn den type overflade som der er mest af på ruten. Husk at vedhæfte et billede af den nævnte belægning."
+        },
+        "andre_belaegnings_typer": {
+          "type": "string",
+          "title": "Hvilke andre typer belægninger er der på ruten?",
+          "description": "Nævn de øvrige typer belægning man også møder på rutens forløb."
+        },
+        "er_belaegningen_fast": {
+          "type": "boolean",
+          "title": "Er belægningen fast?",
+          "description": "Faste belægninger er overflader der er hårde, og ikke giver efter ved færdsel med hjul eller gang. Fx: stampet stabilgrus, slotsgrus, asfalt, betonsten, hårde jordstier mv. Løse belægninger er der hvor overfladen er blød så man synker ned i overfladen eller hvor små hjul kan have svært ved at komme frem: Sand, løs flis, perlesten."
+        },
+        "er_belaegningen_jaevn": {
+          "type": "boolean",
+          "title": "Er belægningen jævn?",
+          "description": "Jævne belægninger er flade, ensartede, uden væsentlige huller, markante rødder og større sten der skaber bump på vejen."
+        },
+        "generel_passagebredde_stoerstedelen": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "title": "Angiv den generelle passagebredde på størstedelen af ruten?",
+          "description": "Bredden på stien som den er størstedel af rutens forløb."
+        },
+        "smalleste_passagebredde": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "title": "Hvor smal er den smalleste passagebredde på turen?",
+          "description": "Her skal du skrive målet i cm på det smalleste sted, som kan være et sted hvor stien er snæver, afstanden mellem to store sten som er lagt på stien for at standse kørsel, afstanden gennem en låge, eller bredden på en gangbro."
+        },
+        "saerlige_opmaerksomheds_punkter": {
+          "type": "string",
+          "title": "Beskriv særlige opmærksomhedspunkter på rutens forløb?",
+          "description": "Beskriv hvis der langs ruten er stejle skråninger, hvis rutens tværfald er stejlt, hvis der er kendskab til giftige planter lige ved rutens forløb eller lign."
+        },
+        "er_indhegnede_omraader_med_loese_dyr": {
+          "type": "boolean",
+          "title": "Skal man på ruten gennem hegnede områder hvor der er løsgående dyr?",
+          "description": "Kryds af i ’ja’ hvis ruten går igennem folde hvor der kan være løsgående dyr i løbet af året, eller hvis ruten går igennem en hundeskov."
+        },
+        "er_hjaelpemiddel_tilgaengelig": {
+          "type": "boolean",
+          "title": "Kan man låne et hjælpemiddel ved ruten?",
+          "description": "Et hjælpemiddel kan være en badestol, en cykel, en terrængående kørestol eller andet der hjælper til at gøre oplevelsen mere tilgængelig."
+        },
+        "hjaelpemiddel_beskrivelse": {
+          "type": "string",
+          "title": "Beskriv det hjælpemiddel man kan låne og hvor man finder det.",
+          "description": "Beskriv hvilket hjælpemiddel er der tale om, og hvor og hvordan man låner det."
         }
-      },
-      "dominerende_belaegnings_typer": {
-        "type": "string",
-        "title": "Hvilken type af belægning er dominerende på rutens forløb?",
-        "description": "Nævn den type overflade som der er mest af på ruten. Husk at vedhæfte et billede af den nævnte belægning."
-      },
-      "andre_belaegnings_typer": {
-        "type": "string",
-        "title": "Hvilke andre typer belægninger er der på ruten?",
-        "description": "Nævn de øvrige typer belægning man også møder på rutens forløb."
-      },
-      "er_belaegningen_solid": {
-        "type": "boolean",
-        "title": "Er belægningen fast?",
-        "description": "Faste belægninger er overflader der er hårde, og ikke giver efter ved færdsel med hjul eller gang. Fx: stampet stabilgrus, slotsgrus, asfalt, betonsten, hårde jordstier mv. Løse belægninger er der hvor overfladen er blød så man synker ned i overfladen eller hvor små hjul kan have svært ved at komme frem: Sand, løs flis, perlesten."
-      },
-      "er_belaegningen_jaevn": {
-        "type": "boolean",
-        "title": "Er belægningen jævn?",
-        "description": "Jævne belægninger er flade, ensartede, uden væsentlige huller, markante rødder og større sten der skaber bump på vejen."
-      },
-      "generel_passagebredde_flertal": {
-        "type": "number",
-        "exclusiveMinimum": 0,
-        "title": "Angiv den generelle passagebredde på størstedelen af ruten?",
-        "description": "Bredden på stien som den er størstedel af rutens forløb."
-      },
-      "smalleste_passagebredde": {
-        "type": "number",
-        "exclusiveMinimum": 0,
-        "title": "Hvor smal er den smalleste passagebredde på turen?",
-        "description": "Her skal du skrive målet i cm på det smalleste sted, som kan være et sted hvor stien er snæver, afstanden mellem to store sten som er lagt på stien for at standse kørsel, afstanden gennem en låge, eller bredden på en gangbro."
-      },
-      "saerlige_opmaerksomheds_punkter": {
-        "type": "string",
-        "title": "Beskriv særlige opmærksomhedspunkter på rutens forløb?",
-        "description": "Beskriv hvis der langs ruten er stejle skråninger, hvis rutens tværfald er stejlt, hvis der er kendskab til giftige planter lige ved rutens forløb eller lign."
-      },
-      "er_indhegnede_omraader_med_loese_dyr": {
-        "type": "boolean",
-        "title": "Skal man på ruten gennem hegnede områder hvor der er løsgående dyr?",
-        "description": "Kryds af i ’ja’ hvis ruten går igennem folde hvor der kan være løsgående dyr i løbet af året, eller hvis ruten går igennem en hundeskov."
-      },
-      "er_hjaelpemiddel_tilgaengelig": {
-        "type": "boolean",
-        "title": "Kan man låne et hjælpemiddel ved ruten?",
-        "description": "Et hjælpemiddel kan være en badestol, en cykel, en terrængående kørestol eller andet der hjælper til at gøre oplevelsen mere tilgængelig."
-      },
-      "hjaelpemiddel_beskrivelse": {
-        "type": "string",
-        "title": "Beskriv det hjælpemiddel man kan låne og hvor man finder det.",
-        "description": "Beskriv hvilket hjælpemiddel er der tale om, og hvor og hvordan man låner det."
       }
     }
-
   },
   "required": [
   ]

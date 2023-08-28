@@ -4,9 +4,10 @@
   "title": "Natur for alle",
   "description": "Bålplads (1022)",
   "type": "object",
-  "$ref": "tilgaeng_opl.json#/$defs/Bålplads og Bålhytte",
+  "$ref": "tilgaeng_opl.json#/$defs/Bålplads",
   "required": [
     "madlavningsfaciliteter_typer",
-    "mulighed_braende"
+    "mulighed_braende",
+    "baalpladsen_beskrivelse"
   ]
 }
