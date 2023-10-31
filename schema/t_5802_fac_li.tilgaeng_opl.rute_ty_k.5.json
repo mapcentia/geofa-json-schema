@@ -6,11 +6,11 @@
   "type": "object",
   "$ref": "tilgaeng_opl.json#/$defs/Vandrerute",
   "required": [
-    "belastning_typer",
+    "besoegsniveau_typer",
     "er_trafikstoej",
     "andre_brugere_benytter_ofte",
     "er_visuelt_fortolket",
-    "er_linkbeskrivelse_autisme",
+    "er_link_beskrivelse_autisme",
     "er_forbindelse_offentlig_transport",
     "er_niveaufri",
     "barriere_typer",

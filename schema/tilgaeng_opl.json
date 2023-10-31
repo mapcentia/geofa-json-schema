@@ -207,7 +207,7 @@
           "title": "Er hele eller dele af legepladsen hegnet ind?",
           "description": "Svar ja hvis hele eller dele af området er hegnet, eller på anden måde aflukket."
         },
-        "Legeplads_tilgaengelighed_beskrivelse": {
+        "legeplads_tilgaengelighed_beskrivelse": {
           "type": "string",
           "title": "Beskrivelse af tilgængeligheden på legepladsen",
           "description": ""
@@ -385,7 +385,7 @@
     "Vandrerute": {
       "type": "object",
       "properties": {
-        "belastning_typer": {
+        "besoegsniveau_typer": {
           "enum": [
             "Lavt besøgsniveau i hverdage",
             "Lavt besøgsniveau i weekender"
@@ -393,7 +393,7 @@
           "title": "Hvordan er besøgsniveauet på ruten?",
           "description": "Lavt besøgsniveau er der hvor man møder få andre brugere og hvor man har mulighed for at finde ro og fred. Svaret kan vurderes ud fra opsatte tællere eller ud fra en lokal vurdering."
         },
-        "belastning_tekst": {
+        "besoegsniveau_tekst": {
           "type": "string",
           "title": "Yderligere oplysninger om besøgsniveauet",
           "description": "Beskriv hvis der er faste begivenheder med højt publikumstryk, enten i kraft af faste brugergrupper på bestemte tidspunkter eller større arrangementer på bestemte årstider."
@@ -418,7 +418,7 @@
           "title": "Indsæt webadresse",
           "description": ""
         },
-        "er_linkbeskrivelse_autisme": {
+        "er_link_beskrivelse_autisme": {
           "type": "boolean",
           "title": "Er der vedhæftet link til rutebeskrivelse for mennesker med autisme?",
           "description": "Hvis der er oprettet en beskrivelse for personer med autisme, fx i samarbejde med AutismGoTo, kan der her indsættes et link til beskrivelsen på www.autismgoto.com. Er der ikke udarbejdet en særlig beskrivelse til denne målgruppe, springes dette felt bare over."

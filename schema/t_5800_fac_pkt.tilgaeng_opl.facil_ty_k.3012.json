@@ -7,7 +7,7 @@
   "$ref": "tilgaeng_opl.json#/$defs/Shelter",
   "required": [
     "er_minimum_aabent_areal",
-    "la_shelter_gulv hoejde over jord",
+    "shelter_gulv_hoejde_over_jord",
     "hoejde_inde_i_shelteren",
     "er_liftskinne",
     "er_udtraekbart_gulv",
